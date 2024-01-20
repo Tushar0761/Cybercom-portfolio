@@ -19,7 +19,6 @@ h2 {
   text-align: center;
 
   font-weight: normal;
-  padding-bottom: 10px;
 }
 
 h3 {
@@ -39,16 +38,32 @@ p {
 }
 
 .topcontainer {
+  height: 100vh;
+}
+#nav {
+  height: 20vh;
   background-color: #e4f9f5;
-  position: relative;
-  padding: 10px;
+}
+#profile {
+  height: 80vh;
+  overflow: hidden;
+}
+#profile div {
+  overflow: hidden;
+}
+#photo img {
+}
+#profileImg {
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 .middle-container {
-  margin: 100px 0px;
+  margin: 10px 0px;
 }
 .bottom-container {
   background-color: #66bfbf;
-  padding: 50px 0px 20px;
+  padding: 10px;
 }
 
 .project-row {
@@ -70,34 +85,11 @@ p {
 .copyright {
   color: #eaf6f6;
   font-size: 0.7rem;
-  padding: 20px 0px;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 40px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-}
-
-.profile-img {
-  /* margin-top: 10px; */
-  background-image: url(/images/Profile-image.jpg);
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
+  padding: 20px 0px 5px;
 }
 
 .skills {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -109,6 +101,8 @@ p {
 .skill {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
